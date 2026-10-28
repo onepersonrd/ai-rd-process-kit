@@ -70,7 +70,7 @@ Not a project-management tool, not a methodology with certification, not a promp
 
 ## Origin and disclosure
 
-The templates are generalized from the working rules of a one-person R&D operation (industrial sensing products: analogue boards, microcontroller firmware, PC tools) that runs its development with Claude Code. The example lessons are real, with product names removed. This README and the templates were drafted with an AI assistant and rewritten by the author from first-hand use.
+The templates are generalized from the working rules of a one-person R&D operation (small hardware products: boards, firmware, PC tools) that runs its development with Claude Code. The example lessons are real, with product names removed. This README and the templates were drafted with an AI assistant and rewritten by the author from first-hand use.
 
 A paid companion pack (filled-in examples, the agent-failure checklist, the netlist and parts-availability checks, Japanese operating notes) is planned. The free kit stays free.
 

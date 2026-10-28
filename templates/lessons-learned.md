@@ -19,7 +19,7 @@ Keep entries short, concrete and reusable. Name the *pattern*, not just the inci
 ## Example entries (generalized from real projects; replace with your own)
 
 ## 2026-10-04: Claimed a sibling project used the same part without opening its latest files
-- Situation: Asked whether project B used the same sensor as project A. Answered "yes, same part" from memory of an older document.
+- Situation: Asked whether project B used the same connector as project A. Answered "yes, same part" from memory of an older document.
 - Cause: Did not open project B's current BOM. Treated a plausible recollection as a fact.
 - Prevention: Any statement about another project's current state cites the file and date it was read. No file, no statement.
 
@@ -28,8 +28,8 @@ Keep entries short, concrete and reusable. Name the *pattern*, not just the inci
 - Cause: Generated technical detail from general knowledge of the part family. Second occurrence of the same pattern in three days.
 - Prevention: Technical claims about a specific part require the datasheet open and the page/section cited. Shared documents are not updated with unsourced technical text.
 
-## 2026-10-27: Reported "the rule does not exist" after searching for two keywords
-- Situation: Searched a rulebook for "side job" and "secondary employment", found nothing, and reported that no rule applied. The rule existed under different wording ("engaging in one's own business without permission").
+## 2026-10-27: Reported "the rule does not exist" after searching a coding standard for two keywords
+- Situation: Searched a coding standard for "prefix" and "naming", found nothing, and reported that no rule applied. The rule existed under different wording ("identifier conventions").
 - Cause: Keyword hit ≠ reading the relevant chapter. "Not found" was reported as "does not exist".
 - Prevention: Questions of the form "is there a rule about X" are answered by reading the relevant chapters, not by keyword search. Report "not found with search terms A, B; chapter not read" rather than "none".
 
