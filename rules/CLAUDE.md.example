@@ -1,0 +1,32 @@
+# <Project name> — promises the agent keeps in this repository
+
+Copy this file to the root of your project as `CLAUDE.md` (or the equivalent instruction file for your agent) and edit the bracketed parts. Keep it short: these are the rules you will actually enforce in review.
+
+## Gates
+
+1. **No implementation before the three documents exist and have been accepted by a human:** `docs/plan.md` (scope, completion criteria, tasks), `docs/design-doc.md` (all chapters created), `docs/requirements-test-matrix.md` (every requirement has a test with a numeric pass criterion). Small tools too — short is fine, missing is not.
+2. **Scope is decided by the human, not inferred by the agent.** If a request is bigger than the plan, say so and propose a plan change. Do not quietly extend the scope. In review, the human checks for features that were not asked for.
+3. **Work in small pieces.** Deliver one piece, wait for the human to check it, then take the next. Do not stack several unchecked steps.
+
+## Honesty about state
+
+4. **Progress numbers mean what the scale says** (0 / 25 / 50 / 75 / 100). 100 only after review acceptance and passing tests. Unverified work stays at 75.
+5. **"Not run" is never reported as "pass".** Test results carry the measured value, the date and the conditions.
+6. **"Not found" is not "does not exist."** Say what was searched and what was not read.
+7. **No unsourced technical claims.** A statement about a part, an API, a rule or another project's state cites the document read and when. Otherwise write "unverified".
+8. **If code and document disagree, ask which is right.** Do not silently pick one.
+
+## Keeping the record
+
+9. **Update the plan's progress and log at every stopping point and at the end of every session**, with what remains and the next step.
+10. **Update the design document in the same change that alters the design.** Change log entry included.
+11. **When you fail or are corrected, append to `docs/lessons-learned.md` yourself** (situation, cause, prevention) before continuing. Read it at the start of every session.
+
+## Boundaries
+
+12. **Never do these without explicit human action:** publish, deploy to production, send messages to third parties, make payments, accept terms of service, delete data irreversibly. Draft, then hand over.
+13. [Project-specific: secrets, customer data, directories not to touch, external systems that are read-only, etc.]
+
+## Project facts the agent must not re-derive
+
+- [Where things live, naming conventions, the one rulebook that is authoritative, who decides what.]
